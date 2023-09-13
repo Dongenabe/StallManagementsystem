@@ -1,0 +1,76 @@
+#dialogoverlay {
+    display: none;
+    opacity: .8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+}
+#dialogbox {
+    display: none;
+    position: fixed;
+    background: #F5F5F5;
+    border-radius: 7px;
+    width: 90%;
+    max-width: 550px;
+    z-index: 10;
+    left: 50%;
+    top: 10%; /* Add this line to adjust the top position */
+    transform: translateX(-50%);
+}
+
+#dialogboxbody {
+    background: #F5F5F5;
+    padding: 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-height: 60vh; /* Change max-height to 60vh */
+    overflow-y: auto;
+}
+
+#dialogboxfoot {
+    background: #04204e;
+    padding: 10px;
+    text-align: right;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+#dialogbox > div {
+    background: #F5F5F5;
+    margin: 8px;
+}
+#dialogbox > div > #dialogboxhead {
+    background: #04204e;
+    font-size: 19px;
+    padding: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#dialogbox > div > #dialogboxbody {
+    background: #F5F5F5;
+    padding: 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+#dialogbox > div > #dialogboxfoot {
+    background: #04204e;
+    padding: 10px;
+    text-align: right;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 1000px) {
+    #dialogbox {
+        width: 800px;
+    }
+}

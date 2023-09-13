@@ -1,0 +1,499 @@
+
+:root {
+    --main-color: #1a73e8;
+    --text-color: #333;
+    --light-text-color: #888;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    margin-right: 10px;
+}
+
+header {
+    background-color: var(--main-color);
+}
+
+
+
+/* Style the navbar */
+.navbar-mainbg {
+    background-color: #0077be;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbarSupportedContent ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+#navbarSupportedContent ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+#navbarSupportedContent ul li:last-child {
+    margin-right: 0;
+}
+
+#navbarSupportedContent ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbarSupportedContent ul li a:hover {
+    background-color: #80ffff;
+    color: #f1f1f1;
+}
+
+
+#navbarSupportedContent ul li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background-color:#80ffff;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: right;
+}
+
+#navbarSupportedContent ul li:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+/* home */
+    .home {
+    padding: 20em 4em;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/Bin1.jpg');
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
+
+    }
+
+    .home h1 {
+    font-size: 5em;
+    }
+
+    .home img {
+    width: 30vmin;
+    height: 30vmin;
+    justify-content: center;
+}
+/* button on mayor's welcome */
+.custom-button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #0FADE1;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #002966;
+    color: #FFFFFF;
+}
+
+.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #002966;
+}
+
+/* about bplo background */
+.bg-custom {
+    background-color: #3374ff;
+}
+.medium-image {
+    width: 300px; 
+    height: auto; 
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.blue-icon {
+    color: #0FADE1;
+}.medium-image {
+    width: 300px; /* Adjust the width as per your requirement */
+    height: auto; /* Preserve the aspect ratio */
+}
+
+
+.about-section p {
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+.icon-box i {
+    color: #0FADE1;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.icon-box h4 {
+    font-size: 20px;
+    font-weight: bold;
+ color: #FFFFFF;
+}
+
+.icon-box p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* button center */
+.btn-center{
+    width: 150px;
+    height: 55px;
+    border-radius: 45px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-left:43%;
+
+}
+.btn-center:hover{
+    background: #2ceae5;
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px rgba(46, 223, 229, 0.445);
+}
+
+
+.btn-recommended {
+    width: 200px;
+    height: 90px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-recommended:hover {
+    background-color: #98ff98; /* white-green color */
+    color: black; /* changing text color to black for better contrast */
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(152, 255, 152, 0.445);
+}
+
+/* */
+
+
+
+/* CSS for inquire now */
+
+.discover-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-top: 40px;
+    color: #ffffff; /* Make the text color white */
+    background-color: #1d3b5a; /* Fill the background of the border with the darker shade of blue */
+    border: 2px solid #1d3b5a;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.custom {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ced4da; 
+}
+.custom label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.custom input[type="text"],
+.custom input[type="number"],
+.custom select.custom-select,
+.custom textarea.form-control {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.btn-danger {
+    background-color: #d7384e;
+    border-color: #d7384e;
+    padding: 10px 20px;
+}
+
+.btn-danger:hover {
+    background-color: #c72c3d;
+    border-color: #c72c3d;
+}
+
+/* end */
+
+
+.about {
+padding: 6em 4em 1em;
+}
+
+.about i {
+color: var(--main-color);
+font-size: 4.6em;
+margin-bottom: 0.3em;
+}
+
+.about p {
+color: var(--light-text-color);
+font-weight: 500;
+}
+.about h3 {
+color: white;
+font-weight: 700;
+margin-bottom: .6em;
+}
+
+.about .opis {
+color: gray;
+}
+
+.about .abouticon {
+border-color: var(--main-color) !important;
+}
+
+.contact {
+padding: 6em 4em 4em;
+background-color: var(--accent-color);
+}
+
+.contact img {
+width: 180px;
+height: 180px;
+}
+
+/* displaying the sections of stalls */
+.stall-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    object-fit: cover;
+}
+
+.stalls-section {
+    background-color: #283747;
+    color: #ffffff;
+}
+
+.stalls-title {
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.inquire {
+padding: 6em 4em 5.6em;
+
+}
+
+
+.card:hover .rent-now-btn {
+    opacity: 1;
+}
+
+.rent-now-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #009688;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+    .card {
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+    }
+    .stalls-title {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 20px; /* Adjust the font size as per your preference */
+    }
+    .card .card-img-top {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card .card-body {
+        padding: 20px;
+    }
+
+    .card .badge {
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 50px;
+        color: #fff;
+    }
+
+    .card p {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .card .rent-now-btn {
+        display: block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .card .rent-now-btn:hover {
+        background-color: #45a049;
+    }
+    .hide {
+        display: none;
+    }
+    .toggle-button {
+        background-color: #004466;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        margin-bottom: 40px;
+    }
+    .toggle-button {
+  margin-bottom: 20px;
+    }
+    .toggle-button:hover {
+        background-color: #0056B3;
+    }
+    .toggle-button:active {
+        transform: scale(0.95);
+    }
+
+/* */
+
+footer {
+background-color: #08172E;
+padding: 1em 4em 2em;
+}
+
+footer i {
+color: ivory;
+font-size: 1em;
+border-color: white !important;
+}
+
+footer .footer-col {
+text-align: center;
+}
+
+footer #copyright {
+margin-top: 1.6em;
+color: whitesmoke;
+text-align: center;
+}
+
+footer .logokofooter {
+width: 70px;
+height: 70px;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-custom {
+-ms-flex-flow: row nowrap;
+flex-flow: row nowrap;
+-ms-flex-pack: start;
+justify-content: flex-start;
+}
+.navbar-expand-custom .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.navbar-expand-custom .navbar-toggler {
+    display: none;
+}
+.navbar-expand-custom .navbar-collapse {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    }
+}

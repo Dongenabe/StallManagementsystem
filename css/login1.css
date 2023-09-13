@@ -1,0 +1,142 @@
+
+body {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/Bin1.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+/* login css*/
+.login {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.containerl {
+    margin: auto;
+    width: 500px; 
+    min-height: 400px; 
+    background: #E2FEFD;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+
+
+.containerl .login-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-bottom: 25px;
+}
+
+.containerl .login-social a {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    transition: .3s;
+}
+
+
+
+.containerl .login-email .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.containerl .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+
+
+.containerl .login-email .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #2EDC95;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #252225;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.containerl .login-email .input-group .btn-cancel {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #ff8080;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #252225;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.containerl .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+
+.containerl .login-email .input-group .input:valid~.label,
+.containerl .login-email .input-group .input:focus~.label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-35px);
+}
+
+
+.containerl .input-group .label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: 0.3s;
+
+}
+
+.login-register-text {
+    color: #111;
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: #6c5ce7;
+}
+
+@media (max-width: 430px) {
+    .containerl {
+        width: 300px;
+    }
+    .containerl .login-social {
+        display: block;
+    }
+    .containerl .login-social a {
+        display: block;
+    }
+}
+
